@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ee9ae2b87d57a33a7381c75d54db12bdf2995656">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-966c9970d46c5049426c1b2b31871147f65ed960.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.github.markushi/android-ui/1.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-b38cd7b2f698e89e6d4c83de0f9d89ea85fc8283.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-9aaf0e565e1b956816de18b56f209acbfaabec41.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ee9ae2b87d57a33a7381c75d54db12bdf2995656">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-0cfae215ee850f218e8f8b5773832c27f0d08f06.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-9668cafaf3fa553cc8d5124ff5539434502b942c.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.0.5/49b5ebbf495380f27dd1986d0b5e5d86c18465a7/ion-2.0.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="49b5ebbf495380f27dd1986d0b5e5d86c18465a7">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/ion-2.0.5-89c156f3435f4a982da777297d72e34b555b0de9.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4d100f9e146f538d729d698a994c74c7b5fb886e">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-4157982268ca674101b0fd33f9eb74a037478089.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="926692214530f39eaed89159237d26cdc0ae6e48">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-d46034cf378f5429c61ada2ab3fb68e5fd63bcfa.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9c91cd2b5773b33e4cfe8ababb6544b54ef40335">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-4071e58df3af7c8d3d6574079ba2304f323608d6.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0bb0df3bf333801406f32bdfba678bcbd38cb9ff">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-f742e4f1ac719eb502c263c7a77edeaeba4d725c.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.github.johnkil.android-robototextview/robototextview/2.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7a79e95d6b7424b7a9671c1383ce0bf9da83cce4">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-40ed12750ed65406f8947b10a1544fd5daf50aad.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-core/3.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="acf66033b1418ccf9e15c8e77750981e4809c4ea">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-0cc11efe9143e5b86f848c3af2d5a6493c5debe3.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.2.0/74137f8d9aac26dd9463efe32271f2be8d41cda9/picasso-2.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="74137f8d9aac26dd9463efe32271f2be8d41cda9">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/picasso-2.2.0-e052548026410e3c2c78abe808537047f5107ca4.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-788d2a60ca0fb7c7e510f946dc0533c10232f6b7.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-8428aaba775cbc3315e25e5de31987b4de5dfda1.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.koushikdutta.async/androidasync/2.0.5/965d5fbe58feeb131f0f5bfa26657b593db83359/androidasync-2.0.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="965d5fbe58feeb131f0f5bfa26657b593db83359">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/androidasync-2.0.5-9f6b09f867ce22273a1e79ebdce7b5ada6df0767.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.2.9/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9839bd52425a6ae600be2c511d5bae3dc8aeb2f9">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-cf80d7c1a98c3102b4a8b952e73da45ed5d982ed.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/answers/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4d100f9e146f538d729d698a994c74c7b5fb886e">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-1000dd80f179ed4219ac3fdc3e6a6d4c481fa1e5.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.github.johnkil.android-robototextview/robototextview/2.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7a79e95d6b7424b7a9671c1383ce0bf9da83cce4">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-254234de032d90bfdd324106c241097269076d84.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.github.markushi/android-ui/1.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="96436aef5f48b09aca1e0183dfcd7782aa580bd6">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-b19b419a75e2e945b5556d7fffcde3f5c07359da.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/library/1.9.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a64671bd87b29748d87865871cc95147b89a2192">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-69713a7e81bea91ffa402c2705130e2578ba3f42.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-ef8b0ea2b597a8ef77a8cc88ce7ae91b005463a7.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-31c7a57f845c8c355334671d3685784097bb1864.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.mopub.sdk.android/mopub/3.3.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cbf5aace0c092ec6cfa00a3f212f0ccd8a2434ed">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-bcf08f1078b52b2c4cfc6ae43b80e0af946217f3.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-b72f482033a346a7a4397551d8ea1ac040142a53.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.mopub.sdk.android/mopub/3.3.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cbf5aace0c092ec6cfa00a3f212f0ccd8a2434ed">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-8b7816495d93bf8802cff3d9fc197f2b56036bcd.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-bdf281bae36cc6565d9c437711070d845c27a2bb.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/in.srain.cube/grid-view-with-header-footer/1.0.8/deff3bd76bb6b2552ec2db3c2cc8a84bd9ef7e1c/grid-view-with-header-footer-1.0.8.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="deff3bd76bb6b2552ec2db3c2cc8a84bd9ef7e1c">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/grid-view-with-header-footer-1.0.8-bfaf48b3a8be2b3d5bbc320a011eac0dcd4e8458.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-3da59f0331f43436886416fa04cf0a1d73ecb9c3.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-22cd6d7d7bbefbd802f35fbd276bbf2aefc802ca.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.github.gabrielemariotti.cards/library/1.9.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a64671bd87b29748d87865871cc95147b89a2192">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-76c4299eb7d6877aebbcfd2120f562c25fac37ce.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-8121defffe8e6e88cd76386a92276ea838107ec9.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="86a04f40b5e28f11d108171131bed57ae1443f35">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-d7be06686f92f6604d7a0c4354b787686170afb3.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/uk.co.chrisjenx/calligraphy/1.2.0/291c60026ceeda3d4da8daac28b0517e4dc3d159/calligraphy-1.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="291c60026ceeda3d4da8daac28b0517e4dc3d159">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/calligraphy-1.2.0-1b349ceee37e037e3cf328e3e00c8e5736660895.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-0aa1f53d66ad754da41d9c658e9ed1dfd5db490a.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0bb0df3bf333801406f32bdfba678bcbd38cb9ff">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-89eb6bc5e90e2c2ef4d0219357f4954074f9f70d.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/beta/1.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="86a04f40b5e28f11d108171131bed57ae1443f35">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-204a37dbd8457a9873aba5b1d4fc65e90990f4c7.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.0.0/3a10b25b6820e19102e118711afe6a66c0bae123/butterknife-6.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/butterknife-6.0.0-0f6c17b090fef009bafb6f8d4f68257a2eb40ead.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/library-2.4.0-1bb3fc8f889e34b11f963be3943ce952f233d6ae.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/it.neokree/MaterialNavigationDrawer/1.2.9/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9839bd52425a6ae600be2c511d5bae3dc8aeb2f9">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-48bf59c27c7492d40efae20eacb92d2affb0b475.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/palette-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="926692214530f39eaed89159237d26cdc0ae6e48">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-600eee5e06a7eece92980793a63586812979fedd.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-core/3.1.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="acf66033b1418ccf9e15c8e77750981e4809c4ea">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-0942865fc67ed42bc197c3a681ad1471bc336a9a.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/gson-2.3-c81751f80fdf4008d8c0ee86a636c36c053c7b9c.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="efeda77c808750cb670ee9c48d8a1835d89dbcb2">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-a489445c0580131f8ebb8bdc4622b5aa021b5d20.jar" />
+    </item>
+    <item
+        jar="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/exploded-aar/com.crashlytics.sdk.android/crashlytics/2.2.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9c91cd2b5773b33e4cfe8ababb6544b54ef40335">
+        <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-15751eb34fc930943c63aa05cabc5cfbd4db5f96.jar" />
+    </item>
+
+</items>
