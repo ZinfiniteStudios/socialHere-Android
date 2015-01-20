@@ -232,13 +232,14 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
     @Override
     public void onAccountOpening(MaterialAccount account) {
         // open profile activity
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, SettingActivity.class);
         startActivity(i);
     }
 
     @Override
     public void onChangeAccount(MaterialAccount newAccount) {
         // when another account is selected
+
     }
 
     @Override

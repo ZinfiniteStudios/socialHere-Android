@@ -43,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HomeFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HomeFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/fragment/HomeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18950437" vertical-offset="690" max-vertical-offset="5010">
+            <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="5010">
               <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
               <folding>
                 <element signature="e#4048#6641#0" expanded="true" />
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserMainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserMainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/UserMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="3690">
-              <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.3877551" vertical-offset="2661" max-vertical-offset="3705">
+              <caret line="234" column="51" selection-start-line="234" selection-start-column="51" selection-end-line="234" selection-end-column="51" />
               <folding>
                 <element signature="e#4203#4497#0" expanded="true" />
                 <element signature="e#4478#4479#0" expanded="true" />
@@ -1225,10 +1225,10 @@
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/service/LocationService.java" />
         <option value="$PROJECT_DIR$/mobile/build.gradle" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/UserMainActivity.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/fragment/FourSquareTipFragment.java" />
         <option value="$PROJECT_DIR$/mobile/src/main/res/layout/fragment_list_main.xml" />
         <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/fragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/UserMainActivity.java" />
       </list>
     </option>
   </component>
@@ -1706,17 +1706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/UserMainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="3690">
-          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-          <folding>
-            <element signature="e#4203#4497#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/res/layout/fragment_list_main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1730,13 +1719,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/fragment/HomeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18950437" vertical-offset="690" max-vertical-offset="5010">
+        <state vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="5010">
           <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
           <folding>
             <element signature="e#4048#6641#0" expanded="true" />
             <element signature="e#4364#6568#0" expanded="true" />
             <element signature="e#6541#6542#0" expanded="true" />
             <element signature="e#6630#6631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/src/main/java/com/david/socialhere/activity/UserMainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3877551" vertical-offset="2661" max-vertical-offset="3705">
+          <caret line="234" column="51" selection-start-line="234" selection-start-column="51" selection-end-line="234" selection-end-column="51" />
+          <folding>
+            <element signature="e#4203#4497#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
           </folding>
         </state>
       </provider>
