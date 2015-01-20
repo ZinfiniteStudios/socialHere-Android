@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">socialHere</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="twitter_key">IA4Lk3d43A4B1Iw1IS2WyDe25</string>
+    <string name="twitter_secret">BzFMTRyymc20gtGuSpgbnhVkgScWcunjzbRaYDI0wGBw6eyeWe</string>
+</resources>
