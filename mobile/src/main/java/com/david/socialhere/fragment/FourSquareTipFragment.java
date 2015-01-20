@@ -103,8 +103,8 @@ public class FourSquareTipFragment extends BaseFragment {
 //        mapView.onResume();
         setUpMapIfNeeded(view);
 
-        floatMap.setVisibility(View.VISIBLE);
-        floatMap.attachToListView(listView);
+        floatMap.setVisibility(View.GONE);
+//        floatMap.attachToListView(listView);
         return view;
     }
 

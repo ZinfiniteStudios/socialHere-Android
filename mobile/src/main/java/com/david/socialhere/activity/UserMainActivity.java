@@ -14,16 +14,13 @@ import com.david.socialhere.fragment.HomeFragment;
 import com.david.socialhere.fragment.TwitterNearbyFragment;
 import com.david.socialhere.fragment.YoutubeFeedFragment;
 import com.david.socialhere.utils.Constants;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubInterstitial;
 
+import io.nlopez.smartlocation.OnLocationUpdatedListener;
+import io.nlopez.smartlocation.SmartLocation;
 import it.neokree.materialnavigationdrawer.MaterialAccount;
 import it.neokree.materialnavigationdrawer.MaterialAccountListener;
 import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
@@ -54,7 +51,7 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
     // A fast frequency ceiling in milliseconds
     private static final long FASTEST_INTERVAL =
             MILLISECONDS_PER_SECOND * FASTEST_INTERVAL_IN_SECONDS;
-    private GoogleApiClient mGoogleApiClient;
+//    private GoogleApiClient mGoogleApiClient;
 
     MaterialSection section1, section2, section3, section4, section5, section6, recorder, night, last, settingsSection;
 
@@ -71,31 +68,41 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
         mLocationRequest.setFastestInterval(FASTEST_INTERVAL);
 
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .addApi(LocationServices.API)
-                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
+//        mGoogleApiClient = new GoogleApiClient.Builder(this)
+//                .addApi(LocationServices.API)
+//                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
+//                    @Override
+//                    public void onConnected(Bundle bundle) {
+//                        PendingResult<Status> result = LocationServices.FusedLocationApi
+//                                .requestLocationUpdates(
+//                                        mGoogleApiClient,   // your connected GoogleApiClient
+//                                        mLocationRequest,   // a request to receive a new location
+//                                        UserMainActivity.this); // the listener which will receive updated locations
+//
+//                    }
+//
+//                    @Override
+//                    public void onConnectionSuspended(int i) {
+//
+//                    }
+//                })
+//                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
+//                    @Override
+//                    public void onConnectionFailed(ConnectionResult connectionResult) {
+//
+//                    }
+//                })
+//                .build();
+
+        SmartLocation.with(getApplicationContext())
+                .location()
+                .oneFix()
+                .start(new OnLocationUpdatedListener() {
                     @Override
-                    public void onConnected(Bundle bundle) {
-                        PendingResult<Status> result = LocationServices.FusedLocationApi
-                                .requestLocationUpdates(
-                                        mGoogleApiClient,   // your connected GoogleApiClient
-                                        mLocationRequest,   // a request to receive a new location
-                                        UserMainActivity.this); // the listener which will receive updated locations
-
+                    public void onLocationUpdated(Location location) {
+                        setUpDrawer(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
                     }
-
-                    @Override
-                    public void onConnectionSuspended(int i) {
-
-                    }
-                })
-                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
-                    @Override
-                    public void onConnectionFailed(ConnectionResult connectionResult) {
-
-                    }
-                })
-                .build();
+                });
 
         // add first account
         MaterialAccount account = new MaterialAccount(" ", "  ", this.getResources().getDrawable(R.drawable.ic_launcher), this.getResources().getDrawable(R.drawable.blur));
@@ -175,11 +182,11 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
 //        startTimer();
     }
 
-    public void startTimer(){
+    public void startTimer() {
         handler = new Handler();
         runnable = new Runnable() {
             @Override
-            public void run(){
+            public void run() {
                 mInterstitial.load();
 
             }
@@ -190,7 +197,7 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
     @Override
     protected void onDestroy() {
         mInterstitial.destroy();
-        if(handler != null) {
+        if (handler != null) {
             handler.removeCallbacks(runnable);
         }
         super.onDestroy();
@@ -199,7 +206,7 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
     @Override
     public void onPause() {
         super.onPause();
-        if(handler != null) {
+        if (handler != null) {
             handler.removeCallbacks(runnable);
         }
     }
@@ -207,19 +214,19 @@ public class UserMainActivity extends MaterialNavigationDrawer implements Materi
     @Override
     protected void onStart() {
         super.onStart();
-        mGoogleApiClient.connect();
+//        mGoogleApiClient.connect();
     }
 
     @Override
     protected void onStop() {
-        mGoogleApiClient.disconnect();
+//        mGoogleApiClient.disconnect();
         super.onStop();
     }
 
     @Override
     public void onLocationChanged(Location location) {
         setUpDrawer(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
-        mGoogleApiClient.disconnect();
+//        mGoogleApiClient.disconnect();
     }
 
     @Override

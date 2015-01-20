@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.david.socialhere.R;
 import com.david.socialhere.cards.AdCard;
@@ -22,13 +23,8 @@ import com.david.socialhere.cards.home.WeatherCard;
 import com.david.socialhere.models.flickr.FlickrResponse;
 import com.david.socialhere.models.weather.current.CurrentResponse;
 import com.david.socialhere.utils.Utils;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.google.gson.Gson;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
@@ -41,6 +37,8 @@ import java.util.Random;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import in.srain.cube.views.GridViewWithHeaderAndFooter;
+import io.nlopez.smartlocation.OnLocationUpdatedListener;
+import io.nlopez.smartlocation.SmartLocation;
 import it.gmariotti.cardslib.library.internal.Card;
 import it.gmariotti.cardslib.library.internal.CardArrayAdapter;
 
@@ -69,7 +67,7 @@ public class HomeFragment extends BaseFragment implements LocationListener {
     // A fast frequency ceiling in milliseconds
     private static final long FASTEST_INTERVAL =
             MILLISECONDS_PER_SECOND * FASTEST_INTERVAL_IN_SECONDS;
-    private GoogleApiClient mGoogleApiClient;
+//    private GoogleApiClient mGoogleApiClient;
 
     View view;
     Context mContext;
@@ -79,6 +77,8 @@ public class HomeFragment extends BaseFragment implements LocationListener {
     ProgressBar circularProgressBar;
     @InjectView(R.id.swipe_container)
     SwipeRefreshLayout swipeRefreshLayout;
+    @InjectView(R.id.empty_text)
+    TextView emptyText;
 
     SharedPreferences sharedPreferences;
 
@@ -104,14 +104,52 @@ public class HomeFragment extends BaseFragment implements LocationListener {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        listView.setEmptyView(circularProgressBar);
-        circularProgressBar.setVisibility(View.VISIBLE);
+        listView.setEmptyView(emptyText);
+//        circularProgressBar.setVisibility(View.VISIBLE);
 
         swipeRefreshLayout.setColorSchemeResources(R.color.park_color, R.color.park_color_ab, R.color.white, R.color.white);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                mGoogleApiClient.connect();
+                circularProgressBar.setVisibility(View.VISIBLE);
+                SmartLocation.with(mContext)
+                        .location()
+                        .oneFix()
+                        .start(new OnLocationUpdatedListener() {
+                            @Override
+                            public void onLocationUpdated(Location location) {
+
+                                if (cardArrayList != null) {
+                                    if (cardArrayList.size() > 0) {
+                                        cardArrayList.clear();
+                                    }
+                                }
+                                cardArrayList = new ArrayList<Card>();
+                                cardArrayAdapter = new CardArrayAdapter(mContext, cardArrayList);
+                                SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(cardArrayAdapter);
+                                swingBottomInAnimationAdapter.setAbsListView(listView);
+                                listView.setAdapter(swingBottomInAnimationAdapter);
+                                swipeRefreshLayout.setRefreshing(false);
+                                circularProgressBar.setVisibility(View.GONE);
+
+                                if (sharedPreferences.getBoolean("ads", true) == true) {
+                                    AdCard adCard = new AdCard(mContext);
+                                    if (Build.VERSION.SDK_INT < 21) {
+                                        adCard.setShadow(false);
+                                        adCard.setBackgroundResource(new ColorDrawable(android.R.color.transparent));
+                                    }
+                                    cardArrayList.add(adCard);
+                                    cardArrayAdapter.notifyDataSetChanged();
+                                }
+
+                                getWeather(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+                                getPictures(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+                                getFourSquarePlaces(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+                                swipeRefreshLayout.setRefreshing(false);
+                            }
+                        });
+
+//                mGoogleApiClient.connect();
             }
         });
 
@@ -133,64 +171,103 @@ public class HomeFragment extends BaseFragment implements LocationListener {
 //        listView.setAdapter(cardArrayAdapter);
 //        swipeRefreshLayout.setRefreshing(false);
 
-        mGoogleApiClient = new GoogleApiClient.Builder(mContext)
-                .addApi(LocationServices.API)
-                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
-                    @Override
-                    public void onConnected(Bundle bundle) {
-                        PendingResult<Status> result = LocationServices.FusedLocationApi
-                                .requestLocationUpdates(
-                                        mGoogleApiClient,   // your connected GoogleApiClient
-                                        mLocationRequest,   // a request to receive a new location
-                                        HomeFragment.this); // the listener which will receive updated locations
+//        mGoogleApiClient = new GoogleApiClient.Builder(mContext)
+//                .addApi(LocationServices.API)
+//                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
+//                    @Override
+//                    public void onConnected(Bundle bundle) {
+//                        PendingResult<Status> result = LocationServices.FusedLocationApi
+//                                .requestLocationUpdates(
+//                                        mGoogleApiClient,   // your connected GoogleApiClient
+//                                        mLocationRequest,   // a request to receive a new location
+//                                        HomeFragment.this); // the listener which will receive updated locations
+//
+//                    }
+//
+//                    @Override
+//                    public void onConnectionSuspended(int i) {
+//
+//                    }
+//                })
+//                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
+//                    @Override
+//                    public void onConnectionFailed(ConnectionResult connectionResult) {
+//
+//                    }
+//                })
+//                .build();
 
-                    }
 
-                    @Override
-                    public void onConnectionSuspended(int i) {
-
-                    }
-                })
-                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
-                    @Override
-                    public void onConnectionFailed(ConnectionResult connectionResult) {
-
-                    }
-                })
-                .build();
-
+//        SmartLocation.with(mContext)
+//                .location()
+//                .start(new OnLocationUpdatedListener() {
+//                    @Override
+//                    public void onLocationUpdated(Location location) {
+//                        SmartLocation.with(mContext).location().stop();
+//                        if (cardArrayList != null) {
+//                            if (cardArrayList.size() > 0) {
+//                                cardArrayList.clear();
+//                            }
+//                        }
+//                        cardArrayList = new ArrayList<Card>();
+//                        cardArrayAdapter = new CardArrayAdapter(mContext, cardArrayList);
+//                        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(cardArrayAdapter);
+//                        swingBottomInAnimationAdapter.setAbsListView(listView);
+//                        listView.setAdapter(swingBottomInAnimationAdapter);
+//                        swipeRefreshLayout.setRefreshing(false);
+//
+//                        if (sharedPreferences.getBoolean("ads", true) == true) {
+//                            AdCard adCard = new AdCard(mContext);
+//                            if (Build.VERSION.SDK_INT < 21) {
+//                                adCard.setShadow(false);
+//                                adCard.setBackgroundResource(new ColorDrawable(android.R.color.transparent));
+//                            }
+//                            cardArrayList.add(adCard);
+//                            cardArrayAdapter.notifyDataSetChanged();
+//                        }
+//
+//                        getWeather(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+//                        getPictures(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+//                        getFourSquarePlaces(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
+//                        swipeRefreshLayout.setRefreshing(false);
+//                    }
+//                });
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        mGoogleApiClient.connect();
-        if (cardArrayList != null) {
-            if (cardArrayList.size() > 0) {
-                cardArrayList.clear();
-            }
-        }
-        cardArrayList = new ArrayList<Card>();
-        cardArrayAdapter = new CardArrayAdapter(mContext, cardArrayList);
-        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(cardArrayAdapter);
-        swingBottomInAnimationAdapter.setAbsListView(listView);
-        listView.setAdapter(swingBottomInAnimationAdapter);
-        swipeRefreshLayout.setRefreshing(false);
+//        mGoogleApiClient.connect();
 
-        if (sharedPreferences.getBoolean("ads", true) == true) {
-            AdCard adCard = new AdCard(mContext);
-            if (Build.VERSION.SDK_INT < 21) {
-                adCard.setShadow(false);
-                adCard.setBackgroundResource(new ColorDrawable(android.R.color.transparent));
-            }
-            cardArrayList.add(adCard);
-            cardArrayAdapter.notifyDataSetChanged();
-        }
+//
+//        if (cardArrayList != null) {
+//            if (cardArrayList.size() > 0) {
+//                cardArrayList.clear();
+//            }
+//        }
+//        cardArrayList = new ArrayList<Card>();
+//        cardArrayAdapter = new CardArrayAdapter(mContext, cardArrayList);
+//        SwingBottomInAnimationAdapter swingBottomInAnimationAdapter = new SwingBottomInAnimationAdapter(cardArrayAdapter);
+//        swingBottomInAnimationAdapter.setAbsListView(listView);
+//        listView.setAdapter(swingBottomInAnimationAdapter);
+//        swipeRefreshLayout.setRefreshing(false);
+//
+//        if (sharedPreferences.getBoolean("ads", true) == true) {
+//            AdCard adCard = new AdCard(mContext);
+//            if (Build.VERSION.SDK_INT < 21) {
+//                adCard.setShadow(false);
+//                adCard.setBackgroundResource(new ColorDrawable(android.R.color.transparent));
+//            }
+//            cardArrayList.add(adCard);
+//            cardArrayAdapter.notifyDataSetChanged();
+//        }
     }
 
     @Override
     public void onStop() {
-        mGoogleApiClient.disconnect();
+
+
+//        mGoogleApiClient.disconnect();
         super.onStop();
     }
 
@@ -291,6 +368,7 @@ public class HomeFragment extends BaseFragment implements LocationListener {
         getPictures(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
         getFourSquarePlaces(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
         swipeRefreshLayout.setRefreshing(false);
-        mGoogleApiClient.disconnect();
+
+//        mGoogleApiClient.disconnect();
     }
 }

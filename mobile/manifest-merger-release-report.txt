@@ -20,14 +20,17 @@ MERGED from com.crashlytics.sdk.android:crashlytics:2.2.0:11:5
 		ADDED from AndroidManifest.xml:6:22
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from AndroidManifest.xml:7:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:13:5
 	android:name
 		ADDED from AndroidManifest.xml:7:22
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from AndroidManifest.xml:8:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:11:5
 	android:name
 		ADDED from AndroidManifest.xml:8:22
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from AndroidManifest.xml:9:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:12:5
 	android:name
 		ADDED from AndroidManifest.xml:9:22
 uses-permission#android.permission.WAKE_LOCK
@@ -36,6 +39,7 @@ ADDED from AndroidManifest.xml:10:5
 		ADDED from AndroidManifest.xml:10:22
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
 ADDED from AndroidManifest.xml:11:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:14:5
 	android:name
 		ADDED from AndroidManifest.xml:11:22
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -80,6 +84,7 @@ MERGED from io.fabric.sdk.android:fabric:1.1.0:11:5
 MERGED from com.mopub.sdk.android:mopub:3.3.0:11:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 MERGED from io.fabric.sdk.android:fabric:1.1.0:11:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:17:5
 	android:label
 		ADDED from AndroidManifest.xml:21:9
 	android:allowBackup
@@ -115,6 +120,7 @@ ADDED from AndroidManifest.xml:34:9
 meta-data#com.google.android.gms.version
 ADDED from AndroidManifest.xml:36:9
 MERGED from com.google.android.gms:play-services:6.5.87:21:9
+MERGED from io.nlopez.smartlocation:library:3.0.1:25:9
 	android:name
 		ADDED from AndroidManifest.xml:36:20
 	android:value
@@ -193,6 +199,7 @@ MERGED from io.fabric.sdk.android:fabric:1.1.0:7:5
 MERGED from com.mopub.sdk.android:mopub:3.3.0:7:5
 MERGED from com.android.support:support-v4:21.0.3:15:5
 MERGED from io.fabric.sdk.android:fabric:1.1.0:7:5
+MERGED from io.nlopez.smartlocation:library:3.0.1:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -207,3 +214,19 @@ ADDED from com.android.support:recyclerview-v7:21.0.0:18:9
 		ADDED from com.android.support:recyclerview-v7:21.0.0:18:19
 	android:name
 		ADDED from com.android.support:recyclerview-v7:21.0.0:18:60
+uses-permission#com.google.android.gms.permission.ACTIVITY_RECOGNITION
+ADDED from io.nlopez.smartlocation:library:3.0.1:15:5
+	android:name
+		ADDED from io.nlopez.smartlocation:library:3.0.1:15:22
+service#io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService
+ADDED from io.nlopez.smartlocation:library:3.0.1:18:9
+	android:exported
+		ADDED from io.nlopez.smartlocation:library:3.0.1:20:13
+	android:name
+		ADDED from io.nlopez.smartlocation:library:3.0.1:19:13
+service#io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService
+ADDED from io.nlopez.smartlocation:library:3.0.1:21:9
+	android:exported
+		ADDED from io.nlopez.smartlocation:library:3.0.1:23:13
+	android:name
+		ADDED from io.nlopez.smartlocation:library:3.0.1:22:13

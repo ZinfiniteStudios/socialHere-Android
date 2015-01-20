@@ -23,13 +23,8 @@ import com.david.socialhere.fragment.YoutubeFeedFragment;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 
@@ -73,7 +68,7 @@ public class MainActivity extends BaseActivity implements LocationListener {
     // A fast frequency ceiling in milliseconds
     private static final long FASTEST_INTERVAL =
             MILLISECONDS_PER_SECOND * FASTEST_INTERVAL_IN_SECONDS;
-    private GoogleApiClient mGoogleApiClient;
+//    private GoogleApiClient mGoogleApiClient;
 
 
     @Override
@@ -100,31 +95,31 @@ public class MainActivity extends BaseActivity implements LocationListener {
         mLocationRequest.setFastestInterval(FASTEST_INTERVAL);
 
 
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .addApi(LocationServices.API)
-                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
-                    @Override
-                    public void onConnected(Bundle bundle) {
-                        PendingResult<Status> result = LocationServices.FusedLocationApi
-                                .requestLocationUpdates(
-                                        mGoogleApiClient,   // your connected GoogleApiClient
-                                        mLocationRequest,   // a request to receive a new location
-                                        MainActivity.this); // the listener which will receive updated locations
-
-                    }
-
-                    @Override
-                    public void onConnectionSuspended(int i) {
-
-                    }
-                })
-                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
-                    @Override
-                    public void onConnectionFailed(ConnectionResult connectionResult) {
-
-                    }
-                })
-                .build();
+//        mGoogleApiClient = new GoogleApiClient.Builder(this)
+//                .addApi(LocationServices.API)
+//                .addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
+//                    @Override
+//                    public void onConnected(Bundle bundle) {
+//                        PendingResult<Status> result = LocationServices.FusedLocationApi
+//                                .requestLocationUpdates(
+//                                        mGoogleApiClient,   // your connected GoogleApiClient
+//                                        mLocationRequest,   // a request to receive a new location
+//                                        MainActivity.this); // the listener which will receive updated locations
+//
+//                    }
+//
+//                    @Override
+//                    public void onConnectionSuspended(int i) {
+//
+//                    }
+//                })
+//                .addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
+//                    @Override
+//                    public void onConnectionFailed(ConnectionResult connectionResult) {
+//
+//                    }
+//                })
+//                .build();
 
     }
 
@@ -211,19 +206,19 @@ public class MainActivity extends BaseActivity implements LocationListener {
     @Override
     protected void onStart() {
         super.onStart();
-        mGoogleApiClient.connect();
+//        mGoogleApiClient.connect();
     }
 
     @Override
     protected void onStop() {
-        mGoogleApiClient.disconnect();
+//        mGoogleApiClient.disconnect();
         super.onStop();
     }
 
     @Override
     public void onLocationChanged(Location location) {
         setUpWeather(Double.toString(location.getLatitude()), Double.toString(location.getLongitude()));
-        mGoogleApiClient.disconnect();
+//        mGoogleApiClient.disconnect();
     }
 
     class WeatherPagerAdapter extends FragmentPagerAdapter {

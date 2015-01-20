@@ -23,6 +23,13 @@
         <dex dex="/Users/davidhodge/Documents/socialHere/mobile/build/intermediates/pre-dexed/debug/classes-9aaf0e565e1b956816de18b56f209acbfaabec41.jar" />
     </item>
     <item
+        jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/io.nlopez.smartlocation/library/3.0.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="62f6728d361faab9bf659edaf21dd5118e962fb7">
+        <dex dex="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/pre-dexed/debug/classes-e949edba1ce8404331e4033704bfa6f558ca158d.jar" />
+    </item>
+    <item
         jar="/Users/davidhodge/Documents/socialHere-Android/mobile/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.1.0/classes.jar"
         jumboMode="false"
         revision="21.1.2"
